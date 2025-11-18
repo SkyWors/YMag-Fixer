@@ -1,0 +1,34 @@
+{
+	"manifest_version": 3,
+	"name": "YMag-Fixer",
+
+	"action": {
+		"default_title": "YMag-Fixer"
+	},
+
+	"version": "1.0.0",
+
+	"description": "YMag-Fixer",
+
+	"permissions": [
+		"storage"
+	],
+
+	"background": {
+		"service_worker": "background.js"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["https://*.ymag.cloud/*"],
+			"js": ["content.js"],
+			"css": ["inject/style.css"]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"matches": ["https://*.ymag.cloud/*"],
+			"resources": ["inject/*"]
+		}
+	]
+}

@@ -1,0 +1,364 @@
+:root {
+	--background-color: #1d1d1d;
+	--text-color: #ffffff;
+	--box-shadow: #3232641a 0px 2px 4px 0px;
+
+	--button-background-color: #5c5c5c;
+	--button-hover-background-color: #76a03e;
+
+	--box-border-color: #313030;
+	--box-hover-border-color: #3d3c3c;
+
+	--navbar-background-color: #26292e;
+}
+
+.primary-nav,
+.user-info,
+.page-header,
+.footer-primary,
+.footer-secondary {
+	background-color: var(--navbar-background-color) !important;
+	background: none;
+}
+
+.user-info .user-info-label {
+	padding: 0 !important;
+	padding-right: 10px !important;
+	font-weight: normal;
+	font-size: 16px;
+	color: var(--text-color);
+}
+
+.page-header {
+	border-bottom: 2px solid var(--box-border-color) !important;
+	box-shadow: #3232641a 0px 2px 4px 0px !important;
+}
+
+.page-footer {
+	box-shadow: none;
+}
+
+.footer-primary {
+	border-top: 2px solid var(--box-border-color) !important;
+}
+
+.logo-centre {
+	position: unset;
+	border: 0;
+	box-shadow: none;
+}
+
+.home {
+	font-size: 18px;
+}
+
+.page-header-divider {
+	display: none;
+}
+
+.primary-nav-item {
+	margin-left: 10px;
+}
+
+* {
+	font-family: Arial !important;
+	text-shadow: none !important;
+}
+
+.block .block-toolbar,
+.block-body,
+.block-footer,
+.planning .planning-row-headers .planning-header {
+	border: 0 !important;
+}
+
+.block,
+.form-wrapper-inner,
+table,
+.contextual-box,
+.agenda {
+	border: 2px solid var(--box-border-color);
+	border-radius: 9px;
+	padding: 10px;
+	background: none;
+	background-color: var(--navbar-background-color) !important;
+	box-shadow: var(--box-shadow);
+	transition: 200ms;
+}
+
+.block:hover,
+.form-wrapper-inner:hover,
+table:hover,
+.contextual-box:hover,
+.agenda:hover {
+	border-color: var(--box-hover-border-color);
+	transition: 200ms;
+}
+
+.planning-header,
+.block-toolbar,
+.block-footer,
+.block-body,
+.modal-body,
+.modal-footer,
+.modal-tabs,
+.notification,
+.chosen-drop {
+	background-color: var(--navbar-background-color) !important;
+}
+
+.modal-content-header {
+	border: 0 !important;
+}
+
+.modal .modal-header {
+	background: 0;
+	background-color: #3b3c5c;
+}
+
+.modal-tabs-description {
+	margin-top: 10px;
+}
+
+.modal-content {
+	table {
+		margin-top: 10px;
+	}
+}
+
+body,
+.section-title,
+.category-header-title,
+.section {
+	color: white !important;
+}
+
+main,
+.contextual-nav,
+.content-header,
+.category-header,
+.planning-seance-inner,
+.newsfeed-item-header,
+.toolbar.with-background-lightness,
+.card,
+.toolbar.with-background {
+	background-color: var(--background-color) !important;
+}
+
+.menu-item a {
+	color: white;
+}
+
+.planning-viewport {
+	overflow: visible !important;
+}
+
+.adaptive-large {
+	width: 100% !important;
+}
+
+.flex-row {
+	justify-content: center;
+}
+
+.agenda-days-name {
+	background: none !important;
+	border: 0 !important;
+}
+
+.agenda-days-name .agenda-cell-box {
+	color: #73888C !important;
+}
+
+.agenda-cell:not(.agenda-cell-today) {
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	margin-top: 4px;
+}
+
+.agenda-cell-today {
+	border-radius: 4px !important;
+}
+
+.agenda-cell .agenda-cell-first.agenda-cell-last {
+	border-radius: 4px !important;
+}
+
+.agenda-cell .agenda-cell-last {
+	border-radius: 0 4px 4px 0 !important;
+}
+
+.agenda-cell .agenda-cell-first {
+	border-radius: 4px 0 0 4px !important;
+}
+
+.agenda-cells-wrapper a {
+	color: black !important;
+}
+
+.agenda-cell-not-in-month {
+	color: #7a7a7a !important;
+}
+
+.newsfeed-item-with-timeline::before {
+	background-color: var(--button-hover-background-color) !important;
+}
+
+.circle-indicator {
+	border: 0 !important;
+	background-color: red !important;
+	color: white !important;
+	font-weight: bold !important;
+	font-size: 15px !important;
+}
+
+.planning-contrainte {
+	background-image: none !important;
+}
+
+.column-widget {
+	width: 400px;
+}
+
+.planning-seance-content {
+	white-space: normal !important;
+}
+
+.planning-seance-inner {
+	border-color: var(--box-border-color);
+}
+
+#planning-jour {
+	height: 540px !important;
+}
+
+.planning-viewport {
+	overflow-y: auto !important;
+}
+
+h3,
+.h3,
+.category-header-title,
+.agenda-header {
+	color: white !important;
+	font-weight: bold;
+}
+
+.btn,
+.btn-primary,
+.tab-link,
+.btn-danger,
+.btn-large {
+	background: var(--button-background-color);
+	border: 0;
+	transition: 200ms !important;
+	border-radius: 6px;
+	color: white !important;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.tab-link:hover,
+.btn-danger:hover,
+.btn-large:hover {
+	background: none;
+	background-color: var(--button-hover-background-color);
+	transition: 200ms !important;
+	user-select: none;
+}
+
+.btn,
+.tab-link {
+	box-shadow: none !important;
+	user-select: none;
+}
+
+.dropdown-menu-toggle {
+	box-shadow: none !important;
+	background: none !important;
+}
+
+.menu-item {
+	background-color: var(--navbar-background-color);
+}
+
+.menu-item:hover {
+	background-color: var(--navbar-background-color);
+}
+
+.menu {
+	transform: translateY(2px);
+	user-select: none;
+}
+
+.table-body {
+	background-color: var(--navbar-background-color) !important;
+}
+
+.table-cell {
+	border: 0 !important;
+	color: white !important;
+}
+
+.table-background-gray-lightness {
+	background: none !important;
+	color: white !important;
+}
+
+.matiere-regroupement-racine,
+.table-foot>.table-row {
+	background-color: #3b3c5c !important;
+
+	.table-cell {
+		color: white !important;
+	}
+
+	.moyenneApp {
+		font-size: 18px;
+	}
+}
+
+.table-striped-decorator>.table-body>.table-row:nth-child(even) {
+	background-color: var(--navbar-background-color);
+}
+
+.table-row {
+	.modal-detail-notes {
+		color: #2b87ff;
+	}
+
+	.text-green {
+		color: #88db1b !important;
+	}
+
+	.text-red {
+		color: #e74c3c !important;
+	}
+}
+
+.table .table-head .table-cell.table-border-top-left-gray-faded {
+	background: none !important;
+}
+
+.explorateur-document-navigation input {
+	width: 46px !important;
+}
+
+text {
+	fill: #ffffff;
+}
+
+path {
+	stroke: #ffffff;
+}
+
+.state-buttons .state-button {
+	width: 220px;
+}
+
+.indicateur-notification {
+	background: none !important;
+	.dropdown-menu-toggle {
+		background: none !important;
+	}
+}
