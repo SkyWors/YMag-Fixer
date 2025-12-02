@@ -322,6 +322,16 @@ h3,
 	background-color: var(--navbar-background-color);
 }
 
+.table .table-head .table-cell.table-background-orange-lightness,
+.table-body .table-cell.table-background-orange-lightness {
+	background: none !important;
+	background-color: var(--navbar-background-color);
+}
+
+.table .table-foot .table-cell.table-background-orange {
+	background: #A46731;
+}
+
 .table-row {
 	.modal-detail-notes {
 		color: #2b87ff;
